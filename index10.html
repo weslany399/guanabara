@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br"> <!-- Início do documento HTML e define o idioma como português do Brasil -->
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>midias em html</title> <!-- Título que aparece na aba do navegador -->
+
+</head>
+
+<body>
+
+    <h1>imagem dinamica</h1> <!-- Título principal da página -->
+
+    <p>
+        tente abrir este site em vários dispositivos diferentes
+        ou simplesmente aumente ou diminua em seu navegador.
+    </p>
+    <!--<p> Parágrafo de texto -->
+
+    <picture> <!-- Agrupa várias versões da mesma imagem -->
+
+        <source media="(max-width: 750px)"
+                srcset="imagens/foto-p.png"
+                type="image/png">
+        <!-- Se a tela tiver até 750px de largura, mostra a imagem pequena -->
+
+        <source media="(max-width: 1000px)"
+                srcset="imagens/foto-m.png"
+                type="image/png">
+        <!-- Se a tela tiver até 1000px, mostra a imagem média -->
+
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+        <!-- Imagem padrão. Será exibida quando nenhuma das condições acima for atendida -->
+
+    </picture> <!-- Fim do grupo de imagens -->
+
+</body> <!-- Fim do conteúdo da página -->
+
+</html> <!-- Fim do documento HTML -->
