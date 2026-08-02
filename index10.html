@@ -36,7 +36,30 @@
         <!-- Imagem padrão. Será exibida quando nenhuma das condições acima for atendida -->
 
     </picture> <!-- Fim do grupo de imagens -->
+   <h1>Reproduzindo áudio</h1> <!-- Título principal da página -->
 
-</body> <!-- Fim do conteúdo da página -->
+<p>Vamos aprender a reproduzir áudios em HTML5.</p> <!-- Parágrafo com um pequeno texto -->
 
-</html> <!-- Fim do documento HTML -->
+<audio preload="metadata" autoplay controls loop> <!-- Cria um player de áudio.
+                                                       preload="metadata": carrega apenas informações do áudio.
+                                                       autoplay: inicia o áudio automaticamente.
+                                                       controls: mostra os controles (play, pausa, volume, etc.).
+                                                       loop: faz o áudio repetir quando terminar. -->
+
+    <source src="midia/My First True Love - Jeremy Korpas.mp3" type="audio/mpeg">
+    <!-- Define o arquivo de áudio que será reproduzido.
+         src: caminho do arquivo.
+         type: informa o formato do arquivo (MP3). -->
+
+    <p>
+        Infelizmente seu navegador não consegue reproduzir áudio.
+        <a href="midia/My First True Love - Jeremy Korpas.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </p>
+    <!-- Este parágrafo só aparece se o navegador não suportar a tag <audio>.
+         A tag <a> cria um link para que o usuário possa baixar o arquivo de áudio.
+         href: indica o endereço do arquivo que será aberto ou baixado. -->
+
+</audio> <!-- Fecha a tag de áudio -->
+</body> 
+
+</html>
