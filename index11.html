@@ -37,7 +37,46 @@
         <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
 
     </video>
-<h1>Inserindo videos do youtube</h1>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rx8EhkXk9zs?si=cW16iA_0MCkvXcNE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h1>Inserindo vídeos do YouTube</h1>
+
+<!--
+Como obter esse código no YouTube:
+
+1. Abra o vídeo que você deseja colocar no seu site.
+2. Clique em "Compartilhar".
+3. Clique em "Incorporar" (Embed).
+4. O YouTube mostrará um código HTML igual a este.
+5. Copie esse código e cole dentro do <body> do seu site.
+
+Pronto! O vídeo aparecerá na sua página.
+-->
+
+<!--
+Tag <iframe>:
+É usada para exibir uma página de outro site dentro da sua página.
+Nesse caso, ela exibe um vídeo do YouTube.
+-->
+<iframe
+    width="560"  <!-- Largura do vídeo -->
+    height="315" <!-- Altura do vídeo -->
+
+    <!-- Link do vídeo incorporado (embed). Esse link é fornecido pelo YouTube. -->
+    src="https://www.youtube.com/embed/rx8EhkXk9zs?si=cW16iA_0MCkvXcNE"
+
+    title="YouTube video player" <!-- Descrição do conteúdo -->
+
+    frameborder="0" <!-- Remove a borda do vídeo -->
+
+    <!-- Permissões para o funcionamento do vídeo -->
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+
+    <!-- Política de segurança ao acessar o vídeo -->
+    referrerpolicy="strict-origin-when-cross-origin"
+
+    <!-- Permite assistir em tela cheia -->
+    allowfullscreen>
+</iframe>
+
 </body>
 </html>
