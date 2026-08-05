@@ -1,13 +1,88 @@
 <!DOCTYPE html>
+<!-- Diz ao navegador que o arquivo é um HTML5. -->
+
 <html lang="pt-br">
+<!-- É onde começa a página HTML.
+     "pt-br" diz que a página está em português. -->
+
 <head>
+    <!-- Guarda as configurações da página. -->
+
     <meta charset="UTF-8">
+    <!-- Permite usar letras com acento, cedilha e outros caracteres. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Faz a página funcionar direitinho no celular e no computador. -->
+
     <title>Outras formatações</title>
+    <!-- É o nome que aparece na aba do navegador. -->
 </head>
+
 <body>
-  <h1>Outras formatações</h1>  
-  <h2>código fonte</h2>
-  <p>O comando <code>document.getElementByid('teste')</code> é escrito em linguagem javascript</p>
+    <!-- Tudo que aparece na página fica dentro do body. -->
+
+    <h1>Outras formatações</h1>
+    <!-- Título principal da página. -->
+
+    <h2>Código-fonte / Pré-formatação</h2>
+    <!-- Subtítulo. -->
+
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p>
+    <!-- <p> cria um parágrafo.
+         <code> mostra que isso é um código de programação. -->
+
+    <pre>
+        <!-- <pre> mostra o texto exatamente como foi escrito,
+             sem tirar espaços e quebras de linha. -->
+
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+        <!-- <code> diz que esse trecho é um código. -->
+    </pre>
+
+    <h2>Citações simples</h2>
+
+    <p>Como diria o pai de um amigo:
+        <q>o computador é um burro muito rápido</q>
+    </p>
+    <!-- <q> coloca uma frase entre aspas automaticamente. -->
+
+    <h2>Citações completas</h2>
+
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+
+    <blockquote cite="link do livro">
+        A diferença entre elementos inline e um bloco de texto é importante.
+    </blockquote>
+    <!-- <blockquote> serve para mostrar uma citação maior.
+         cite guarda o link de onde essa frase foi tirada. -->
+
+    <h2>Abreviações</h2>
+
+    <p>Estou estudando
+        <abbr title="HyperText Markup Language">HTML</abbr>
+        e
+        <abbr title="Cascading Style Sheets">CSS</abbr>.
+    </p>
+    <!-- <abbr> mostra que a palavra é uma sigla.
+         title mostra o significado quando passa o mouse em cima. -->
+
+    <h2>Texto invertido</h2>
+
+    <p>
+        <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+    </p>
+    <!-- <bdo> muda a direção do texto.
+         dir="rtl" faz o texto ficar da direita para a esquerda. -->
+
 </body>
+<!-- Fim do conteúdo da página. -->
+
 </html>
+<!-- Fim do documento HTML. -->

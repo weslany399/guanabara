@@ -1,30 +1,104 @@
 <!DOCTYPE html>
+<!-- Informa ao navegador que o documento utiliza HTML5. -->
+
 <html lang="pt-br">
+<!-- Tag <html>: É a estrutura principal da página.
+     lang="pt-br" informa que o idioma é Português do Brasil. -->
+
 <head>
+    <!-- Tag <head>: Contém as configurações da página. -->
+
     <meta charset="UTF-8">
+    <!-- Tag <meta charset>: Permite o uso de acentos e caracteres especiais. -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formatação de textos</title>
+    <!-- Tag <meta viewport>: Faz a página se adaptar a celulares, tablets e computadores. -->
+
+    <title>Formatação de Textos</title>
+    <!-- Tag <title>: Define o nome da aba do navegador. -->
+
+    <style>
+        /* Tag <style>: Permite escrever código CSS dentro do HTML. */
+
+        mark {
+            /* Seleciona todas as tags <mark> da página. */
+
+            background-color: limegreen;
+            /* background-color: Define a cor de fundo do texto marcado. */
+        }
+    </style>
 </head>
+
 <body>
+    <!-- Tag <body>: Contém todo o conteúdo visível da página. -->
+
     <h1>Principais formatações</h1>
-    <h2>Negrito / Destaques</h2>
-    <p>Nesta frase temos <b>termo em negrito</b> usando a tag b (não semântica)</p>
-    <p>Nesta frase tenho <strong> um termo em destaque</strong> usando a tag STRONG (semântica)</p>
-    <h2>itálico / Ênfase</h2>
-    <p>nesta frase temos um <i> termo em itálico</i> usando a tag I (não semântica)</p> //cliquei em (control shift p) digitei abb selecionei a primeira opção digitei i e dei enter e entao minha frase selecionada ficou entre a tag i
-    <p>nesta frase temos um <em>termo em Ênfase</em> usando a tag EM (semântica)</p> //para colocar a tag na frase fiz o mesmo (cliquei control shift p) cliquei na primeira opçao e digitei p e enter pronto minha frase apareceu entre a tag o mesmo fiz para a tag em
+    <!-- Tag <h1>: Título principal da página. -->
+
+    <h2>Negrito / Destaque</h2>
+    <!-- Tag <h2>: Subtítulo da página. -->
+
+    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag B (não semântica).</p>
+    <!-- Tag <p>: Cria um parágrafo.
+         Tag <b>: Deixa o texto em negrito apenas na aparência.
+         Não informa que o texto é importante (não semântica). -->
+
+    <p>Nesta frase, tenho um <strong>termo em destaque</strong> usando a tag STRONG (semântica).</p>
+    <!-- Tag <strong>: Deixa o texto em negrito e informa que ele é importante. -->
+
+    <h2>Itálico / Ênfase</h2>
+
+    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I (não semântica).</p>
+    <!-- Tag <i>: Deixa o texto em itálico apenas pela aparência. -->
+
+    <p>Nesta frase, temos um <em>termo em ênfase</em> usando a tag EM (semântica).</p>
+    <!-- Tag <em>: Deixa o texto em itálico e indica que ele possui ênfase. -->
+
     <h2>Texto marcado</h2>
-    <p>Podemos criar também um <Mark style="background-color: blue;"> texto marcado </Mark> usando a tag MARK.</p> //se eu quiser mudar a cor do texto marcado devo usar a tag style dentro da tag mark e escolher a cor
+
+    <p>Podemos criar também <mark>um texto marcado</mark> usando a tag MARK.</p>
+    <!-- Tag <mark>: Destaca o texto como se tivesse sido marcado com um marca-texto. -->
+
+    <p>E no outro parágrafo, temos <mark>outro texto marcado</mark> no final.</p>
+
     <h2>Texto grande e pequeno</h2>
-    <p>estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> neste paragrafo</p>
-    <h2>Texto Deletado</h2>
-    <p>podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido,mas não considerado </p>
-    <h2>Texto Inserido</h2>
-    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi marcado depois</p>
-    <p>existe tambem <u>o sublinhado </u>com a tag u (não semântica)</p>
+
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <!-- Tag <big>: Aumenta o tamanho do texto.
+         ⚠️ Está obsoleta no HTML5.
+         Tag <small>: Diminui o tamanho do texto. -->
+
+    <h2>Texto deletado</h2>
+
+    <p>Podemos marcar <del>um texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <!-- Tag <del>: Mostra que um texto foi removido ou deixou de valer.
+         O texto aparece riscado. -->
+
+    <h2>Texto inserido</h2>
+
+    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <!-- Tag <ins>: Indica que um texto foi adicionado.
+         Geralmente aparece sublinhado. -->
+
+    <p>Existe também o <u>sublinhado</u> com a tag U (não semântica).</p>
+    <!-- Tag <u>: Apenas sublinha o texto.
+         Não indica significado.
+         Hoje é recomendado usar CSS para isso. -->
+
     <h2>Texto sobrescrito</h2>
-    <p>para inserir coisas do tipo x<sup>20</sup>+3</p>
+
+    <p>Para inserir coisas do tipo x<sup>20</sup>+3</p>
+    <!-- Tag <sup>: Coloca o texto um pouco acima da linha.
+         Muito usada para expoentes, como x² ou x²⁰. -->
+
     <h2>Texto subscrito</h2>
-    <p>para escrever coisas do tipo H<sub>2</sub>0</p>
+
+    <p>Para inserir coisas do tipo H<sub>2</sub>O</p>
+    <!-- Tag <sub>: Coloca o texto um pouco abaixo da linha.
+         Muito usada em fórmulas químicas, como H₂O. -->
+
 </body>
+<!-- Fecha a tag <body>. -->
+
 </html>
+<!-- Fecha a tag <html>. -->

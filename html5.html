@@ -1,20 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
+<!-- Tag <html>: É a estrutura principal da página.
+     Todo o código HTML fica dentro dela. -->
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>Exemplo de semantica</title>
-  <style>
-    body{
-         background-color: rgb(81, 81, 190);
-    }
-  </style>
+    <!-- Tag <head>: Contém informações da página que não aparecem no conteúdo. -->
+
+    <title>Meu site HTML4</title>
+    <!-- Tag <title>: Define o nome que aparece na aba do navegador. -->
 </head>
-<body>
-    <P>
-      Eu moro na <address>Rua das capixabas 229 - botafogo - rj</address>
-    </P>
-    
+
+<body bgcolor="blue">
+    <!-- Tag <body>: Contém todo o conteúdo visível da página.
+         bgcolor="blue": Muda a cor de fundo para azul.
+         ⚠️ No HTML5 esse atributo está obsoleto (não é mais recomendado).
+         Hoje a cor de fundo é alterada usando CSS. -->
+
+    Eu moro na <u>Rua dos Capixabas, 229 - Botafogo - RJ</u>
+    <!-- Tag <u>: Sublinha o texto.
+         ⚠️ Também não é recomendada para estilizar textos no HTML5.
+         Hoje o sublinhado é feito usando CSS. -->
+
+    <marquee behavior="" direction="right">
+        Teste de Marquee
+    </marquee>
+    <!-- Tag <marquee>: Faz o texto se movimentar na tela.
+         direction="right": Faz o texto se mover para a direita.
+         behavior: Define o tipo do movimento (normal, alternado, etc.).
+         ⚠️ A tag <marquee> foi removida do HTML5 e não deve mais ser usada.
+         Atualmente animações são feitas com CSS ou JavaScript. -->
+
 </body>
+<!-- Fecha a tag <body>, encerrando o conteúdo visível da página. -->
+
 </html>
+<!-- Fecha a tag <html>, encerrando o documento HTML. -->
